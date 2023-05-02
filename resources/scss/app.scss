@@ -1,1 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
+
+li {
+    list-style: none;
+}
+
+.jumbotron {
+    background-size: cover;
+    min-height: 500px;
+    background-image: url('../img/jumbotron.jpg');
+}

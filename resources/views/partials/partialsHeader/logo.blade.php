@@ -1,5 +1,0 @@
-<!-- HTML  -->
-    <div>
-        logo
-    </div>
-

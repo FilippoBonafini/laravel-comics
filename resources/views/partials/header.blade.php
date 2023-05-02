@@ -1,18 +1,15 @@
 <header>
+
     {{-- NAVBAR --}}
-    <div>
-        <div>
-            @include('partials/partialsHeader.logo')
-        </div>
-        <div>
-            @include('partials/partialsHeader.menu')
-        </div>
-    </div>
+    <nav>
+        @include('partials/partialsHeader.menu')
+    </nav>
     {{-- /NAVBAR --}}
 
     {{-- JUMBOTRON  --}}
-    <div>
+    <jumbo>
         @include('partials/partialsHeader.jumbo')
-    </div>
+    </jumbo>
     {{-- /JUMBOTRON  --}}
+
 </header>
