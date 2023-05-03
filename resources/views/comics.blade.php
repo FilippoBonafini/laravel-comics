@@ -36,10 +36,12 @@
                 </div>
                 <div>
                     @foreach ($comics as $comic)
+                    <a href="{{ route('comic', ['index' => $loop->index]) }}">{{ $comic['title'] }}
                         <div class="comics-item">
                             <img src="{{$comic['thumb']}}" alt="{{$comic['series']}}">
                             <h5>{{ $comic['title'] }}</h5>
                         </div>
+                    </a>
                     @endforeach
                 </div>
                 <div class="primary-button">LOAD MORE...</div>

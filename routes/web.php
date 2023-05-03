@@ -19,4 +19,22 @@ Route::get('/', function () {
     ];
 
     return view('comics', $data);
-});
+})->name('home');
+
+
+Route::get('/detail/{index}/', function ($index) {
+    $all_comics = config('comics');
+    if ($index > count($all_comics) - 1) {
+        abort(404);
+    };
+    $comic = $all_comics[$index];
+    $data = [
+        'comic' => $comic,
+        'nav' => config('nav'),
+        'displays' => config('displayer'),
+        'dclist' => config('dccomicslist'),
+        'shoplist' => config('shoplist'),
+        'contacts' => config('contact')
+    ];
+    return view('detail', $data);
+})->where('index', '[0-9]+')->name('comic');
