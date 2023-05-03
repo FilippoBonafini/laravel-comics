@@ -1,11 +1,6 @@
 @import "~bootstrap/scss/bootstrap";
+@import "global.scss";
+@import "header.scss";
+@import "comics.scss";
+@import "footer.scss";
 
-li {
-    list-style: none;
-}
-
-.jumbotron {
-    background-size: cover;
-    min-height: 500px;
-    background-image: url('../img/jumbotron.jpg');
-}
